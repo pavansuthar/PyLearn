@@ -14,12 +14,9 @@ def makeVarGlobal():
   # change a global variable inside a function
   global x
   x = 'super awesome'
-
-  # create a global variable inside a function
   global y
   y = 'yes of course!'
   print("Python is " + x, y)
 
 makeVarGlobal()
-
 print(y)

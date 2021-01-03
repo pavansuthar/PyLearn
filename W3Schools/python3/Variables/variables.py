@@ -8,14 +8,16 @@ print(a)
 a = 10
 print(a)
 
-# Casting
+# Casting which specify the data type of a variable
 a = str('10')
 b = float(20)
 c = int(30)
 
 print(b, a, c)
+
+# Get the type
 print(type(b), type(a), type(c))
 
 # String quotes
-d = 'same string with double quotes as well'
+d = 'same string with single quotes as well'
 print(d)
