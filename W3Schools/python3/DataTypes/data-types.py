@@ -1,33 +1,30 @@
-# Built-in data types
-# In Python, the data type is set when you assign a value to a variable
+_text = "Hello World"
+_numeric = 10
+_float = 10.5
+_complex = 1j
+_lists = ["appple", "banana", "mango"]
+_tuple = ("appple", "banana", "mango")
+_range = range(6)
+_dict = {"name": "John", "age": 26}
+_set = {"apple", "banana", "mango"}
+_frozenset = frozenset({"appple", "banana", "mango"})
+_boolean = True
+_bytes = b"Hello"
+_byteArray = bytearray(5)
+_memView = memoryview(bytes(5))
 
-# text type - str
-a = 'Hello world'
-
-# numeric types - int / float / complex
-b = 20
-c = 20.5
-d = 1j
-
-# sequence types - list / tuple / range
-e  = ["apple", "banana", "cherry"]
-f = ("apple", "banana", "cherry")
-g = range(0, 2)
-
-# mapping type - dict
-h = {"name" : "John", "age" : 36}
-
-# set types - set, frozenset
-i = {"apple", "banana", "cherry"}
-j = frozenset({"apple", "banana", "cherry"})
-
-# boolean - bool
-k = True
-
-# binary Types - bytes, bytearray, memoryview
-l = b"Hello"
-m = bytearray(5)
-n = memoryview(bytes(5))
-
-# Getting data type of any variable - type(var)
-print(a, type(a))
+# Text
+print(_text, type(_text))
+# Numeric
+print(_numeric, type(_numeric), _float, type(_float), _complex, type(_complex))
+# Sequence
+print(_lists, type(_lists), _tuple, type(_tuple), _range, type(_range))
+# Mapping
+print(_dict, type(_dict))
+# Set
+print(_set, type(_set), _frozenset, type(_frozenset))
+# Boolean
+print(_boolean, type(_boolean))
+# Binary
+print(_bytes, type(_bytes), _byteArray, type(
+    _byteArray), _memView, type(_memView))
